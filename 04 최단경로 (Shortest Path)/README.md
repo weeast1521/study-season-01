@@ -43,3 +43,10 @@
 
 * 문성원: <https://www.acmicpc.net/problem/1261>
 
+# 활동 사진
+
+![0C6C3C90-3BED-41CF-B417-2979B23A529F](https://github.com/user-attachments/assets/98cbc1da-0a79-4fab-b1a8-d1c549fc929b)
+![025718FC-457D-480A-B44D-5FE494C816FE](https://github.com/user-attachments/assets/5b10b01a-d4e8-43f2-93ec-46c1d5299048)
+
+
+

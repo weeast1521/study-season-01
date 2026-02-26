@@ -5,6 +5,7 @@
 
 # 과제
 
+* [큐](https://www.acmicpc.net/problem/10845) (스터디 진행 중 풀이)
 * [K물류창고](https://www.acmicpc.net/problem/23350)
 
 # 추천 문제

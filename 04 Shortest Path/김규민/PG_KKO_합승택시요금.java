@@ -19,7 +19,7 @@ class Solution {
         
         return dist2;
     }
-    
+    //O(logN
     public int[] dijkstra(int s){
         // if(s == e){return 0;}
         dist = init();
@@ -33,11 +33,12 @@ class Solution {
             arr[cur[1]] = cur[2];
             // System.out.println(": " +Arrays.toString(new int[]{cur[0], cur[1],cur[2]}));
         }
+        //O((V+E)log(V+E))
         while(!pq.isEmpty()){
-            int[] cur = pq.poll();
+            int[] cur = pq.poll(); // O(log(V+E))
             // if(cur[1] == e) return arr;
             if(cur[2] > arr[cur[1]]) continue;
-            for(int[] ncur : dist[cur[1]]){
+            for(int[] ncur : dist[cur[1]]){ // O(V+E)
                 if(arr[ncur[1]] > cur[2] + ncur[2]){
                     arr[ncur[1]] = cur[2] + ncur[2];
                     pq.add(new int[]{cur[0], ncur[1],cur[2] + ncur[2]});
@@ -58,7 +59,8 @@ class Solution {
         N = n;
         faresS = fares;
         int min = Integer.MAX_VALUE;
-        
+
+        //O((V+E)log(V+E)) // V ~= n^2
         int[] r1 = dijkstra(s);
         int[] r2 = dijkstra(a);
         int[] r3 = dijkstra(b);

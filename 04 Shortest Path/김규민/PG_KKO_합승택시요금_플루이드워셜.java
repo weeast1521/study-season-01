@@ -14,6 +14,7 @@ class Solution {
             mat[k[0]][k[1]] = k[2];
             mat[k[1]][k[0]] = k[2];
         }
+        // O(n^3)
         for(int k =1; k<=n;k++){
             for(int i = 1; i<=n;i++){
                 for(int j = 1 ; j <= n ; j++){
@@ -22,10 +23,7 @@ class Solution {
                 }
             }
         }
-//         for(int i = 0; i<=n;i++){
-//         System.out.println(Arrays.toString(mat[i]));
 
-//         }
         int result = Integer.MAX_VALUE;
         for(int i = 1; i<=n;i++){
             result = Math.min(result,mat[s][i] + mat[i][a]+ mat[i][b]);
